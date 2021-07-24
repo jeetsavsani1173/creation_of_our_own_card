@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Card</title>
+    <script>
+        alert("WELCOME\nClick OK to create your own card");
+        function change1() {
+            document.getElementById("c1").src = "card1.jpg";
+            document.getElementById("c2").src = "card1.jpg";
+        }
+        function change2() {
+            document.getElementById("c1").src = "card2.jpg";
+            document.getElementById("c2").src = "card2.jpg";
+        }
+        function change3() {
+            document.getElementById("c1").src = "card3.jpg";
+            document.getElementById("c2").src = "card3.jpg";
+        }
+        function change4() {
+            document.getElementById("c1").src = "card4.jpg";
+            document.getElementById("c2").src = "card4.jpg";
+        }
+        function change5() {
+            document.getElementById("c1").src = "card5.jpg";
+            document.getElementById("c2").src = "card5.jpg";
+        }
+        function change6() {
+            document.getElementById("t1").src = "type1.jpg";
+        }
+        function change7() {
+            document.getElementById("t1").src = "type2.png";
+        }
+        function input() {
+            var y = document.getElementById("fn").value;
+            var x = document.getElementById("sn").value;
+            document.getElementById("sn2").innerHTML = x + " " + y;
+        }
+        function submit() {
+            document.getElementById("cc").style.display = "none";
+            document.getElementById("cd").style.margin = "200px 0px 0px 400px";
+        }
+        function mr() {
+            document.getElementById("gen").innerHTML = "mr.";
+        }
+        function ms() {
+            document.getElementById("gen").innerHTML = "ms.";
+        }
+        function other() {
+            document.getElementById("gen").innerHTML = "&nbsp;&nbsp;&nbsp;- ";
+        }
+        function ac() {
+            document.getElementById("ct").innerHTML = "DEBIT CARD";
+        }
+        function dc() {
+            document.getElementById("ct").innerHTML = "CREDIT CARD";
+        }
+    </script>
+    <style>
+        
+        .fs {
+            height: 160px;
+            width: 260px;
+            border-radius: 25px;
+        }
+
+        .bs {
+            border-radius: 25px;
+            height: 160px;
+            width: 260px;
+        }
+
+        .card1 {
+            background-image: url(card1.jpg);
+            background-size: 98px;
+            margin-top: 10px;
+            border-radius: 25px;
+            height: 50px;
+            width: 98px;
+            border: 2px solid lightgrey;
+        }
+
+        .card2 {
+            background-image: url(card2.jpg);
+            background-size: 98px;
+            margin-top: 10px;
+            border-radius: 25px;
+            height: 50px;
+            width: 98px;
+            border: 2px solid rgb(231, 188, 80);
+        }
+
+        .card3 {
+            background-image: url(card3.jpg);
+            background-size: 98px;
+            margin-top: 10px;
+            border-radius: 25px;
+            height: 50px;
+            width: 98px;
+            border: 2px solid rgb(250, 210, 216);
+        }
+
+        .card4 {
+            background-image: url(card4.jpg);
+            background-size: 98px;
+            margin-top: 10px;
+            border-radius: 25px;
+            height: 50px;
+            width: 98px;
+            border: 2px solid rgb(198, 227, 245);
+        }
+
+        .card5 {
+            background-image: url(card5.jpg);
+            background-size: 98px;
+            margin-top: 10px;
+            border-radius: 25px;
+            height: 50px;
+            width: 98px;
+            border: 2px solid rgba(143, 170, 96, 0.664);
+        }
+
+        .type {
+            height: 25px;
+            width: 55px;
+            margin-top: 125px;
+            margin-left: 192px;
+            position: absolute;
+            background: transparent;
+        }
+
+        .type1 {
+            background-image: url(type1.jpg);
+            background-size: 105px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            height: 50px;
+            width: 100px;
+        }
+
+        .type2 {
+            background-image: url(type2.png);
+            background-size: 80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            height: 50px;
+            width: 100px;
+        }
+
+        .bn {
+            margin-left: 65px;
+            text-transform: uppercase;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 18px;
+            position: absolute;
+            font-size: 25px;
+        }
+
+        .chip {
+            background-size: 40px;
+            background-image: url(chip.jpg);
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 12px;
+            width: 42px;
+            height: 33px;
+            border-radius: 10px;
+        }
+
+        .sn {
+            text-transform: uppercase;
+            font-family: fantasy;
+            margin-left: 42px;
+            margin-top: 62px;
+            position: absolute;
+            font-size: 19px;
+        }
+
+        .code {
+            position: absolute;
+            margin-top: 95px;
+            font-size: 21px;
+            margin-left: 9.5px;
+        }
+
+        .d {
+            position: absolute;
+            margin-left: 15px;
+            margin-top: 130px;
+            font-size: 10px;
+        }
+
+        .date {
+            position: absolute;
+            margin-left: 70px;
+            margin-top: 125px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .logo {
+
+            background-size: 30px;
+            background-image: url(logo.jpg);
+            position: absolute;
+            border-radius: 50%;
+            margin-top: 122px;
+            margin-left: 140px;
+            height: 30px;
+            width: 30px;
+        }
+
+        .strip {
+            height: 30px;
+            width: 260px;
+            background-color: black;
+            position: absolute;
+            margin-left: 272px;
+            margin-top: -142px;
+        }
+
+        .ws {
+            height: 27px;
+            width: 220px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            margin-left: 282px;
+            margin-top: -102px;
+        }
+
+        .cn {
+            margin-left: 175px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 1px;
+        }
+
+        .holo {
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 30px;
+            border-radius: 10px;
+            width: 50px;
+            background-image: url(holo.png);
+            background-size: 80px;
+            background-position: center;
+            margin-left: 290px;
+            margin-top: -65px;
+        }
+
+        .web {
+            position: absolute;
+            margin-top: -62px;
+            margin-left: 365px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .tf {
+            position: absolute;
+            margin-top: -28px;
+            margin-left: 305px;
+            font-style: normal;
+            font-size: 12px;
+        }
+
+        .no {
+            position: absolute;
+            margin-top: -33px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 375px;
+        }
+
+        .gen {
+            text-transform: uppercase;
+            font-family: fantasy;
+            margin-left: 11px;
+            margin-top: 62px;
+            position: absolute;
+            font-size: 19px;
+        }
+
+        .ct {
+            position: absolute;
+            margin-left: 410px;
+            margin-top: -161px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .tnx {
+            position: absolute;
+            margin-left: 175px;
+            margin-top: -65px;
+            color: black;
+            text-shadow: 2px 2px 5px teal;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body >
+    <div>
+        <div id="cd">
+            <p class="bn"><b>Welcome Bank</b></p>
+            <div class="chip"></div>
+            <p class="sn" id="sn2"></p>
+            <p class="gen" id="gen"></p>
+            <p class="code">2589-XXXX-XXXX-XXXX</p>
+            <p class="d">Valid Thru:</p>
+            <p class="date">07/38</p>
+            <div class="logo"></div>
+            <img class="type" id="t1"
+                src="card.jpg">
+            <img class="fs" id="c1"
+                src="card.jpg">
+            &nbsp;
+            <div class="strip"></div>
+            <div class="ws">
+                <p class="cn">|&nbsp;&nbsp;254</p>
+            </div>
+            <div class="holo"></div>
+            <p class="web"><b>www.iwelbank.com</b></p>
+            <p class="tf">Toll free no:</p>
+            <p class="no">0261-2485631/98</p>
+            <img class="bs" id="c2"
+                src="card.jpg"></img>
+            <p class="ct" id="ct"></p>
+        </div>
+        <div id="cc">
+            <div>
+                <p
+                    style="margin-left: 170px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <b>Select Your Card Design</b></p>
+                <input type="button" id="e1" onmouseenter="enter()" onmouseout="out()" class="card1"
+                    onclick="change1()">&nbsp;&nbsp;
+                <input type="button" id="e2" onmouseenter="enter1()" onmouseout="out1()" class="card2"
+                    onclick="change2()">&nbsp;&nbsp;
+                <input type="button" id="e3" onmouseenter="enter2()" onmouseout="out2()" class="card3"
+                    onclick="change3()">&nbsp;&nbsp;
+                <input type="button" id="e4" onmouseenter="enter3()" onmouseout="out3()" class="card4"
+                    onclick="change4()">&nbsp;&nbsp;
+                <input type="button" id="e5" onmouseenter="enter4()" onmouseout="out4()" class="card5"
+                    onclick="change5()">
+                
+            </div>
+
+            <div>
+                <p
+                    style="margin-left: 135px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    <b>Select Your Payment Network logo</b></p>
+                <input id="e6" onmouseenter="enter5()" onmouseout="out5()" style="margin-left: 165px;" type="button"
+                    class="type1" onclick="change6()">&nbsp;&nbsp;
+                <input id="e7" onmouseenter="enter6()" onmouseout="out6()" type="button" class="type2"
+                    onclick="change7()">
+            </div>
+            <div>
+                <br>
+                <div>
+                    <label
+                        style="margin-left: 167px; font-size: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Select
+                        Your Card type</label>
+                    <br>
+                    <input style="margin-left: 177px; font-size: 20px;" name="card" type="radio" onclick="ac()">
+                    <label>ATM Card</label>
+                    <input type="radio" name="card" onclick="dc()">
+                    <label>Credit Card</label>
+                </div>
+                <div>
+                    <br>
+                    <label
+                        style="margin-left: 180px; font-size: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Select
+                        Your Gender</label>
+                    <br>
+                    <input style="margin-left: 174px; font-size: 20px;" name="gender" type="radio" onclick="mr()">
+                    <label>Male</label>
+                    <input type="radio" name="gender" onclick="ms()">
+                    <label>Female</label>
+                    <input type="radio" name="gender" onclick="other()">
+                    <label>Other</label>
+                    
+                </div>
+                <div><br>
+                    <label
+                        style="margin-left: 79px; font-size: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter
+                        Your Surname :</label>
+                    <input onfocus="foc(this)" name="surname" maxlength="11" type="text" id="sn" onclick="nam1()"
+                        oninput="input()"><br><br>
+                    <label
+                        style="margin-left: 79px; font-size: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enter
+                        Your Name :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input onfocus="foc(this)" name="myname" maxlength="11" type="text" id="fn" onclick="nam()"
+                        oninput="input()">
+                    
+                </div><br>
+            </div>
+            <div>
+                <button
+                    style="font-family:Arial, Helvetica, sans-serif; border:1px solid lightgrey; border-radius: 50px; margin-left: 207px;"
+                    onclick="submit()">Click here to view your card</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
